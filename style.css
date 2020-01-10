@@ -44,22 +44,20 @@ color_tree: blanc cassé */
 body
 {
     font-family: 'Chivo', sans-serif;
-    margin-bottom:-300px;
     background-color:#FAFAFA;
+    margin:0;
 }
 #container
 {
      display:flex;
      flex-direction: row-reverse;
-     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-     max-width:1340px;
+     max-width:1000px;
      margin:auto;
-     border-radius: 10px;
 }
 footer
 {
     text-align:center;
-    padding-top:20px;
+    padding:20px;
 }
 
 /* Les titres de la page */
@@ -71,6 +69,8 @@ footer
 h1 
 {
     font-size:3.1em;
+    margin-top:5rem;
+    font-weight: 200;
 }
 h2
 {
@@ -80,7 +80,7 @@ h2
 .h2_line
 {
     border-color:#42A5F5;
-    max-width: 12%;
+    max-width: 8%;
     margin:0px;
     margin-top:-0.7rem;
 }
@@ -114,56 +114,35 @@ h6
     flex:2;
     margin:0rem 2rem 0rem 2rem;
 }
-
-/* ovales autour des coméptences */
-.button_skills_marketing_one, .button_skills_marketing_second, .button_skills, .button_skills_marketing
-{
-    display: flex;
-    margin-top:-20px;
-}
-
-.button_skills_indvidual
-{
-    margin-right:15px;
-    background-color: #42A5F5;
-    padding: 5px 15px 5px 15px; 
-    border-radius : 30px;
-    color:#FAFAFA;
-}
-
 /* Mise en page des 3 grandes sous-parties */
 .formation, .experience 
 {
     display: flex;
     margin-top:35px;
 }
-
 .left_formation, .left_experience
 {
-    flex:1;
+    flex:1.5;
 }
-
 .right_formation, .right_experience
 {
-    flex:4;
+    flex:3;
 }
 .skills_all_col
 {
     display: flex;
     justify-content: space-around;
 }
-
-/* icones et listes à puce */
+.familyname {
+    font-weight: 400;
+}
 .icon_h3
 {
-    width: 1.4rem;
-    margin-right:1rem;
+    margin-right:1rem;   
 }
+
 .icon_h4_big
-{
-    width: 1rem;
-    margin-right:0.3rem;
-}
+
 li
 {
     margin:0rem 0rem 0.3rem 1rem;
@@ -179,7 +158,6 @@ ul {
 aside
 {
     flex:1;
-    border-radius: 10px 0px 0px 10px;
     margin-left: -1rem;
 }
 .titre_aside
@@ -197,21 +175,14 @@ aside
     width: 15px;
     margin-right:0.7rem;
 }
-.ul_aside {
-    list-style: none;
-}
-.li_aside
-{
-    margin:0rem 0rem 0.3rem 0rem;
-}
 
 /*4.PHOTO
 -----------------------------------------------------*/
 
 #photo_gauthier_desktop
 {
-    max-width:150px;
-    border-radius: 90px;
+    max-width:200px;
+    border-radius: 180px;
     margin: auto;
     display: flex;
     margin-top: 2.5rem;
@@ -225,9 +196,9 @@ aside
 }
 .date_desktop
 {
-    margin-top: 1.8rem;
     font-weight: 700;
     font-size:0.9em;
+    margin-top:0;
 }
 
 
@@ -373,4 +344,26 @@ aside
     {
         padding: 1rem 4rem 3rem 4rem;
     }
+}
+
+
+.loisir_aside 
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5em;
+}
+
+.date_icon_desktop {
+    margin-right:0.5rem;
+}
+
+.left_date_desktop {
+    display: flex;
+    margin-top: 1.8rem;
+}
+
+.icon_date_desktop {
+    margin-right:1rem;
+    color:#42A5F5;
 }
