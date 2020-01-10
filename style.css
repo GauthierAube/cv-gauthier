@@ -77,6 +77,7 @@ h2
 {
     font-size:1.5em;
     margin-top:-2rem;
+    font-weight: 500;
 }
 .h2_line
 {
@@ -97,7 +98,7 @@ h4
 {
     font-size:1.3em;
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 h5
 {
@@ -109,8 +110,9 @@ h6
 {
     font-size:1em;
     margin:auto;
-    padding-top: 1.3rem;
+    padding-top: 1.1rem;
     margin-bottom:-0.8em;
+    font-weight: 300;
 }
 
 /*2.PARTIE DE DROITE (SECTION)
@@ -137,7 +139,7 @@ h6
 .skills_all_col
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .familyname {
     font-weight: 400;
@@ -147,15 +149,13 @@ h6
     margin-right:1rem;   
 }
 
-.icon_h4_big
-
 li
 {
-    margin:0rem 0rem 0.3rem 1rem;
+    margin-bottom:0.3rem;
+    margin-left:-2.5rem;;
 }
 ul {
-    padding-left: 0;
-    list-style-type:circle;
+    list-style-type:none;
 }
 
 /*3.PARTIE GAUCHE (ASIDE)
@@ -174,6 +174,7 @@ aside
 .text_aside
 {
     padding:0.1rem 2rem 1.4rem 2rem;
+    text-justify: auto;
 }
 .icons_aside
 {
@@ -198,14 +199,11 @@ aside
 }
 .date_info_desktop
 {
-    font-weight: 700;
-    font-size:0.7em;
-    margin-top:-0.7rem;
+    margin-top:-0.8rem;
 }
 .date_desktop
 {
-    font-weight: 700;
-    font-size:0.9em;
+    font-weight: 500;
     margin-top:0;
 }
 
@@ -381,4 +379,21 @@ aside
     color:#42A5F5;
     font-size:0.6em;
     margin-top:0.2rem;
+}
+
+.h6_top_aside {
+    padding-top:0;
+}
+
+
+.skills_col_2_right {
+    margin-right:7rem;
+}
+
+.skills_col_2_bold {
+    font-weight: 500;
+}
+
+.skills_col_2_name {
+    margin-bottom: 5px;
 }
