@@ -1,9 +1,9 @@
 /*SOMMAIRE
 -------------------------------------------------------
 1. MISE EN PAGE GÉNÉRALE 
-2. PARTIE DROITE (SECTION)
-3. PARTIE GAUCHE (ASIDE)
-4. PHOTO
+2. NOM + MÉTIER (HEADER)
+3. PARTIE DROITE (SECTION)
+4. PARTIE GAUCHE (ASIDE)
 5. RESPONSIVE DESIGN
 */
 
@@ -11,23 +11,19 @@
 /*1.MISE EN PAGE GÉNÉRALE
 ----------------------------------------------------*/
 
-/* COULEURS*/
+/* Couleurs*/
 :root {
-  --light-bg-color: #FAFAFA;
-  --dark-bg-color: #424242;
-  --color-bg-color: #42A5F5; 
-    
-  --light-text-color: #FAFAFA;
-  --dark-text-color: #424242;
-  --color-text-color: #42A5F5;
+  --light-color: #FAFAFA;
+  --dark-color: #424242;
+  --one-color: #42A5F5; 
 }
 
 body
 {
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
-    background-color: var(--light-bg-color);
-    color: var(--dark-text-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
     margin:0;
 }
 #container
@@ -45,11 +41,6 @@ footer
 }
 
 /* Les titres de la page */
-/* titre et texte en majuscule*/
-.uppercase
-{
-    text-transform: uppercase;
-}
 .h1_desktop 
 {
     font-size:3.5em;
@@ -61,14 +52,6 @@ h2
     font-size:1.5em;
     margin-top:-2rem;
     font-weight: 500;
-}
-.h2_line
-{
-    border-color:#42A5F5;
-    max-width: 8%;
-    margin:0px;
-    margin-top:-0.7rem;
-    margin-bottom:20px;
 }
 h3
 {
@@ -97,15 +80,31 @@ h6
     margin-bottom:-0.8em;
     font-weight: 300;
 }
-
+.h6_top_aside {
+    padding-top:0;
+}
 a 
 {
     color: #FAFAFA;
     text-decoration: none;
 }
 
+/*2.NOM + MÉTIER (HEADER)
+----------------------------------------------------*/
+.familyname {
+    font-weight: 400;
+    color: var(--one-color);
+}
+.h2_line
+{
+    border-color: var(--one-color);
+    max-width: 8%;
+    margin:0px;
+    margin-top:-0.7rem;
+    margin-bottom:90px;
+}
 
-/*2.PARTIE DE DROITE (SECTION)
+/*3.PARTIE DE DROITE (SECTION)
 ----------------------------------------------------*/
 .part_right
 {
@@ -132,14 +131,10 @@ a
     display: flex;
     justify-content: space-between;
 }
-.familyname {
-    font-weight: 400;
-    color: var(--color-bg-color);
-}
 .icon_h3
 {
     margin-right:1rem; 
-    color: var(--color-bg-color);
+    color: var(--color-color);
 }
 
 li
@@ -152,23 +147,72 @@ ul
     list-style-type:none;
 }
 
+.skills_col_2_right {
+    margin-right:7rem;
+}
 
-/*3.PARTIE GAUCHE (ASIDE)
+.skills_col_2_bold {
+    font-weight: 500;
+}
+
+.skills_col_2_name {
+    margin-bottom: 5px;
+}
+.date_icon_desktop {
+    margin-right:0.5rem;
+}
+
+.left_date_desktop {
+    display: flex;
+    margin-top: 1.8rem;
+    flex: 1.5;
+}
+
+.icon_date_desktop {
+    margin-right:1rem;
+    color:#42A5F5;
+}
+
+.icon_date_desktop_circle {
+    margin-right:1rem;
+    color:#42A5F5;
+    font-size:0.6em;
+    margin-top:0.2rem;
+}
+.icon_date_circle_mobile
+{
+    color:#42A5F5;
+    font-size:0.6em;
+    margin-top:0.2rem;
+    margin-left:0.4rem;
+}
+.date_info_desktop
+{
+    margin-top:-0.8rem;
+}
+.date_desktop
+{
+    font-weight: 500;
+    margin-top:0;
+}
+
+
+/*4.PARTIE GAUCHE (ASIDE)
 ----------------------------------------------------*/
 
 aside
 {
     flex:1;
     justify-content: space-between;
-    color: var(--light-text-color);
-    background-color: var(--color-bg-color);
+    color: var(--light-color);
+    background-color: var(--one-color);
 }
 .titre_aside
 {
     text-align: center;
     padding: 0.7rem;
     margin-top:0px;
-    background-color: var(--dark-bg-color);
+    background-color: var(--dark-color);
 }
 .text_aside
 {
@@ -180,10 +224,23 @@ aside
     width: 15px;
     margin-right:0.7rem;
 }
-
-/*4.PHOTO
------------------------------------------------------*/
-
+.aside_loisir_icons
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5em;
+    margin-bottom:3rem;
+    margin-top:1rem;
+}
+.aside_3_parts {
+    display: flex;
+    flex-direction: column;
+}
+.aside_loisir {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 #photo_gauthier_desktop
 {
     max-width:200px;
@@ -195,15 +252,6 @@ aside
     border: 3px solid rgba(158, 158, 158, 0.5);
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-}
-.date_info_desktop
-{
-    margin-top:-0.8rem;
-}
-.date_desktop
-{
-    font-weight: 500;
-    margin-top:0;
 }
 
 
@@ -275,29 +323,44 @@ aside
         margin-left: -0.5rem;
         margin-right:-0.5rem;
         padding-top:2rem;
-        background-color: #424242;
     }
     .titre_competence_mobile
     {
         margin-top:-2rem;
-        color: var(--light-text-color);
     }
     
     .h1_mobile {
         font-size:2.6em;
-        color:#fafafa;
         margin-top:2rem;
     }
     
+    /* Nom + Photo + métiers (header)*/
+        #photo_gauthier_mobile
+    {
+        border-radius: 200px;
+        margin: auto;
+        margin-top: 2rem;
+        display: flex;
+    }
+    .header_contact
+    {
+        color: var(--light-color);
+        background-color: var(--one-color);
+        padding-top:1rem;
+        margin-right:-1.5rem;
+        margin-left:-1.5rem;
+    }
+    .header_contact_details
+    {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom:1.5rem;
+    }
+    
     /* Partie à droite (Section)*/
-    .part_right
+    .section_one, .section_two, .section_tree
     {
-        margin:0px;
-    }    
-    #formations, #experiences, #skills
-    {
-         margin-left:2rem;
-         margin-right:2rem;
+        margin:2rem:
     }
     
     .formation, .experience, .skills_all_col
@@ -331,99 +394,14 @@ aside
         padding: 2rem;
         border-radius:10px;
     }
-    /*Partie gauche (aside)*/
+    /*Partie bas de page (aside)*/
     aside
     {
         flex:1;
-    }
-    #photo_gauthier_mobile
-    {
-        border-radius: 200px;
-        margin: auto;
-        margin-top: 2rem;
-        display: flex;
     }
     .text_aside
     {
         padding: 1rem 4rem 3rem 4rem;
     }
-    .header_contact
-    {
-        color: #FAFAFA; 
-    }
-    .header_contact_details
-    {
-        display: flex;
-        justify-content: space-around;
-        padding-bottom:1.5rem;
-        border-top: 3px solid #42A5F5;
-    }
 }
 
-.aside_loisir_icons
-{
-    display: flex;
-    justify-content: space-around;
-    font-size: 2.5em;
-    margin-bottom:3rem;
-    margin-top:1rem;
-}
-
-.date_icon_desktop {
-    margin-right:0.5rem;
-}
-
-.left_date_desktop {
-    display: flex;
-    margin-top: 1.8rem;
-    flex: 1.5;
-}
-
-.icon_date_desktop {
-    margin-right:1rem;
-    color:#42A5F5;
-}
-
-.icon_date_desktop_circle {
-    margin-right:1rem;
-    color:#42A5F5;
-    font-size:0.6em;
-    margin-top:0.2rem;
-}
-
-.h6_top_aside {
-    padding-top:0;
-}
-
-
-.skills_col_2_right {
-    margin-right:7rem;
-}
-
-.skills_col_2_bold {
-    font-weight: 500;
-}
-
-.skills_col_2_name {
-    margin-bottom: 5px;
-}
-
-.aside_loisir {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.icon_date_circle_mobile
-{
-    color:#42A5F5;
-    font-size:0.6em;
-    margin-top:0.2rem;
-    margin-left:0.4rem;
-}
-
-
-.aside_3_parts {
-    display: flex;
-    flex-direction: column;
-}
