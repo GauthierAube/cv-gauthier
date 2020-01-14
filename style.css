@@ -203,7 +203,6 @@ ul
 aside
 {
     flex:1;
-    justify-content: space-between;
     color: var(--light-color);
     background-color: var(--one-color);
 }
@@ -211,7 +210,7 @@ aside
 {
     text-align: center;
     padding: 0.7rem;
-    margin-top:0px;
+    margin-top:0;
     background-color: var(--dark-color);
 }
 .text_aside
@@ -232,32 +231,22 @@ aside
     margin-bottom:3rem;
     margin-top:1rem;
 }
-.aside_3_parts {
-    display: flex;
-    flex-direction: column;
-}
-.aside_loisir {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
 #photo_gauthier_desktop
 {
     max-width:200px;
     border-radius: 180px;
     margin: auto;
     display: flex;
+    box-shadow: 0px 5px 2px rgba(2,119,189 ,1); 
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-    border: 3px solid rgba(158, 158, 158, 0.5);
-    -webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
+
+
 
 
 /*5.RESPONSIVE DESIGN
 ----------------------------------------------------*/
-
 /* Ordinateur et TV */
 @media (min-width: 769px) 
 {
@@ -276,7 +265,6 @@ aside
     }
     #container
     {
-        box-shadow: none;
         width: auto;
         margin-top:-1.6rem;
     }
@@ -305,15 +293,9 @@ aside
 @media screen and (max-width: 768px)
 {
     /* Mise en page générale */
-    body
-    {
-        width: auto;
-    }
     #container
     {
-        display:flex;
         flex-direction: column;
-        box-shadow:none;
     }  
     header
     {
@@ -390,7 +372,7 @@ aside
     }
     .right_formation, .right_experience, .skills_all_col
     {
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19); 
         padding: 2rem;
         border-radius:10px;
     }
