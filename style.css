@@ -13,7 +13,7 @@
 
 /* Couleurs*/
 :root {
-  --light-color: #FAFAFA;
+  --light-color: #FFFFFF;
   --dark-color: #424242;
   --one-color: #42A5F5; 
 }
@@ -85,7 +85,7 @@ h6
 }
 a 
 {
-    color: #FAFAFA;
+    color: var(--light-color);
     text-decoration: none;
 }
 
@@ -170,18 +170,18 @@ ul
 
 .icon_date_desktop {
     margin-right:1rem;
-    color:#42A5F5;
+    color: var(--one-color);
 }
 
 .icon_date_desktop_circle {
     margin-right:1rem;
-    color:#42A5F5;
+    color: var(--one-color);
     font-size:0.6em;
     margin-top:0.2rem;
 }
 .icon_date_circle_mobile
 {
-    color:#42A5F5;
+    color: var(--one-color);
     font-size:0.6em;
     margin-top:0.2rem;
     margin-left:0.4rem;
@@ -242,9 +242,6 @@ aside
     margin-bottom: 2.5rem;
 }
 
-
-
-
 /*5.RESPONSIVE DESIGN
 ----------------------------------------------------*/
 /* Ordinateur et TV */
@@ -279,13 +276,9 @@ aside
         padding: 2rem;
         border-radius:10px;
     }
-    .right_experience
-    {
-        margin-left:1rem;
-    }
     .text_aside
     {
-        padding-left:4rem;
+        padding-left:3rem;
     }
 }
 
@@ -300,17 +293,11 @@ aside
     header
     {
         text-align: center; 
-        width:auto;
         margin-top:-1.2rem;
         margin-left: -0.5rem;
         margin-right:-0.5rem;
         padding-top:2rem;
-    }
-    .titre_competence_mobile
-    {
-        margin-top:-2rem;
-    }
-    
+    }    
     .h1_mobile {
         font-size:2.6em;
         margin-top:2rem;
@@ -321,8 +308,7 @@ aside
     {
         border-radius: 200px;
         margin: auto;
-        margin-top: 2rem;
-        display: flex;
+        margin-top: 3rem;
     }
     .header_contact
     {
@@ -339,12 +325,7 @@ aside
         padding-bottom:1.5rem;
     }
     
-    /* Partie à droite (Section)*/
-    .section_one, .section_two, .section_tree
-    {
-        margin:2rem:
-    }
-    
+    /* Partie à droite (Section)*/    
     .formation, .experience, .skills_all_col
     {
         display: flex;
@@ -377,10 +358,6 @@ aside
         border-radius:10px;
     }
     /*Partie bas de page (aside)*/
-    aside
-    {
-        flex:1;
-    }
     .text_aside
     {
         padding: 1rem 4rem 3rem 4rem;
