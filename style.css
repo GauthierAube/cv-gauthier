@@ -63,21 +63,6 @@ h4 {
     margin-bottom: 1rem;
     font-weight: 600;
 }
-
-h5 {
-    font-size: 0.9em;
-    margin-top: -20px;
-    font-weight: 400;
-}
-
-h6 {
-    font-size: 1em;
-    margin: auto;
-    padding-top: 1.1rem;
-    margin-bottom: -0.8em;
-    font-weight: 300;
-}
-
 .h6_top_aside {
     padding-top: 0;
 }
@@ -113,7 +98,6 @@ a {
 .formation,
 .experience {
     display: flex;
-    margin-top: 30px;
 }
 
 .left_formation,
@@ -124,14 +108,7 @@ a {
 .right_formation,
 .right_experience {
     flex: 3;
-    margin-left: 0.6rem;
 }
-
-.skills_all_col {
-    display: flex;
-    justify-content: space-between;
-}
-
 .icon_h3 {
     margin-right: 1rem;
     color: var(--color-color);
@@ -204,6 +181,9 @@ aside {
     flex: 1;
     color: var(--light-color);
     background-color: var(--one-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .titre_aside {
@@ -238,13 +218,13 @@ aside {
     display: flex;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    border: 4px solid rgba(100,100,100, 0.2);
 }
 
 .aside_loisir {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 700px;
 }
 
 /*5.RESPONSIVE DESIGN
@@ -278,14 +258,6 @@ aside {
     .skills_all_col {
         display: flex;
         flex-direction: column;
-    }
-
-    .experience,
-    .formation,
-    .skills_all_col {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        padding: 2rem;
-        border-radius: 10px;
     }
 
     .text_aside {
@@ -373,13 +345,7 @@ aside {
         display: none;
     }
 
-    .right_formation,
-    .right_experience,
-    .skills_all_col {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
-        padding: 2rem;
-        border-radius: 10px;
-    }
+   
 
     /*Partie bas de page (aside)*/
     .text_aside {
