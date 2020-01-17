@@ -193,13 +193,26 @@ article ul li:nth-child(4){
 article ul:nth-child(2){
     margin-right:100px;
 }
-
 /* Téléphone */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .container{
         flex-direction: column;
     }
+    section{
+        padding:20px;
+    }
+    article ul:nth-child(2){
+        margin-right:0;
+    }
+    h1{
+        font-size:3.4em;
+        margin-top:100px;
+    }
+    address{
+        display: flex;
+    }
 }
+
 
 
 /*2.NOM + MÉTIER (HEADER)
