@@ -10,45 +10,64 @@
 
 /*1.MISE EN PAGE GÉNÉRALE
 ----------------------------------------------------*/
-body
-{
+body{
     max-width: 1180px;
     margin:auto;
     font-family: 'Roboto', sans-serif;
     color:#424242;
 }
 
-.container
-{
+.container{
     display: flex;
     flex-direction: row-reverse;
 }
 
-h1
-{
+h1{
     font-size:4em;
     margin-top:100px;
     margin-bottom:0px;
 }
 
-.text_recommandations div
-{
+h2{
+    margin-top:0px;
+}
+
+h3{
+    font-size:1.8em;
+    text-transform: uppercase;
+    border-bottom:2px solid #42A5F5;
+    padding-bottom:15px;
+}
+
+article h3{
+    color:black;
+}
+
+h4{
+    font-size:1.3em;
+    text-transform: uppercase;
+    margin-bottom:0;
+}
+
+header{
+    margin-bottom:120px;
+}
+
+.text_recommandations div{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header span{
     color: #42A5F5;
 }
 
-section 
-{
+section {
     flex:2;
     padding: 0 40px 0 70px;
 }
 
-aside
-{
+aside{
     background-color:#42A5F5;
     flex: 1;
     padding-top:50px;
@@ -56,8 +75,7 @@ aside
     text-align: justify;
 }
 
-aside img
-{
+aside img{
     border: 5px solid rgba(100,100,100,0.3);
     border-radius: 100px;
     display: flex;
@@ -65,36 +83,78 @@ aside img
     margin-top:20px;
     margin-bottom: 40px;
 }
-
 aside h3{
     background-color:#424242;
-    padding : 20px;
+    padding : 10px;
     text-align: center;;
 }
-
 aside p, a {
     padding: 0 40px 0 40px; 
 }
-
-
-.part_right
-{
+.part_right{
     display: flex;
 }
 
-.date
-{
+.date{
     flex:1;
 }
 
-.part_right_text
-{
+.part_right_text{
     flex:2;
 }
 
-footer
-{
+footer{
     text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.far, .fas{
+    color:#42A5F5;
+}
+
+h3 .fas{
+    margin-right:30px;
+    font-size:1.4em;
+}
+.date
+{
+    display: flex;
+    margin-top:27px;
+}
+.date .far, .fas{
+    margin-right:10px;
+    font-size:0.7em;
+}
+.date p{
+    margin-top:0px;
+    margin-bottom:3px;
+}
+article ul{
+    list-style-type:none;
+    padding-left:0px;
+}
+address{
+    font-style:normal;
+}
+address a{
+    text-decoration: none;
+    color:#FFF;
+    padding-left:0px;
+}
+address p{
+    margin-top:25px;
+}
+aside div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside .fas{
+    color:#FFF;
+    font-size:3em;
+    display: flex;
+    flex-direction: column;
 }
 
 /*2.NOM + MÉTIER (HEADER)
