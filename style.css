@@ -11,10 +11,11 @@
 /*1.MISE EN PAGE GÉNÉRALE
 ----------------------------------------------------*/
 body{
-    max-width: 1180px;
+    max-width: 1190px;
     margin:auto;
     font-family: 'Roboto', sans-serif;
     color:#424242;
+    font-weight: 200;
 }
 
 .container{
@@ -26,10 +27,19 @@ h1{
     font-size:4em;
     margin-top:100px;
     margin-bottom:0px;
+    font-weight: 200;
 }
 
 h2{
-    margin-top:0px;
+    margin-top:0;
+    margin-bottom:4px;
+    font-weight: 400;
+}
+
+header hr{
+    border: 1px solid #42A5F5;
+    width: 10%;
+    margin: 0px;
 }
 
 h3{
@@ -37,6 +47,7 @@ h3{
     text-transform: uppercase;
     border-bottom:2px solid #42A5F5;
     padding-bottom:15px;
+    font-weight: 500;
 }
 
 article h3{
@@ -47,6 +58,7 @@ h4{
     font-size:1.3em;
     text-transform: uppercase;
     margin-bottom:0;
+    font-weight: 500;
 }
 
 header{
@@ -58,8 +70,9 @@ header{
     justify-content: space-between;
 }
 
-header span{
+h1 span{
     color: #42A5F5;
+    font-weight:400;
 }
 
 section {
@@ -97,6 +110,7 @@ aside p, a {
 
 .date{
     flex:1;
+    font-weight: 500;
 }
 
 .part_right_text{
@@ -124,7 +138,9 @@ h3 .fas{
 .date .far, .fas{
     margin-right:10px;
     font-size:0.7em;
+    margin-top:4px;
 }
+
 .date p{
     margin-top:0px;
     margin-bottom:3px;
@@ -132,9 +148,12 @@ h3 .fas{
 article ul{
     list-style-type:none;
     padding-left:0px;
+    font-weight: 400;
+    margin-right:30px;
 }
 address{
     font-style:normal;
+    font-weight: 400;
 }
 address a{
     text-decoration: none;
@@ -144,18 +163,44 @@ address a{
 address p{
     margin-top:25px;
 }
-aside div:first-child{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 aside .fas{
     color:#FFF;
     font-size:3em;
+}
+.aside_loisir_icons{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 1rem;
+}
+article ul li:first-child{
+    margin-bottom:13px;
+    text-transform: uppercase;
+}
+.text_recommandations li{
+    margin-bottom:5px;
+}
+aside{
     display: flex;
     flex-direction: column;
 }
+aside div:first-child{
+    flex:2;
+}
+article ul li:nth-child(4){
+    font-weight: 200;
+}
+article ul:nth-child(2){
+    margin-right:100px;
+}
+
+/* Téléphone */
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
 
 /*2.NOM + MÉTIER (HEADER)
 ----------------------------------------------------*/
@@ -173,14 +218,8 @@ aside .fas{
 
 /*5.RESPONSIVE DESIGN
 ----------------------------------------------------*/
-/* Ordinateur et TV */
-@media (min-width: 769px) {
-}
 
 /* Tablette */
 @media screen and (max-width: 991px) {
 }
 
-/* Téléphone */
-@media screen and (max-width: 768px) {
-}
