@@ -239,7 +239,7 @@ address p{
         flex:4;
     }
     aside {
-        flex:0.5;
+        flex:1;
     }
     article {
         box-shadow: 0px 0px 10px 0px rgba(199,199,199,1);
