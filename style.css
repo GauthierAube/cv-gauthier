@@ -135,7 +135,7 @@ aside{
 }
 aside img{
     border: 5px solid rgba(100,100,100,0.3);
-    border-radius: 100px;
+    border-radius: 300px;
     display: flex;
     margin:auto;
     margin-top:20px;
